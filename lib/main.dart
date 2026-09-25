@@ -22,19 +22,38 @@ class Dawg extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor:Colors.blue[300],
-        body: Column(
+        body: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
           Center (
           child: Container(
-            width: 600,
+            width: 300,
             height: 300,
             child: Image(
             image: AssetImage("images/images_(2).jpg"),
           ),
           ),
           ),
-          Text("Hola"),
+          SizedBox(
+            width: 10,
+          ),
+          Container(
+            width: 300,
+            height: 300,
+            child: Image(
+            image: AssetImage("images/images_(1).jpg"),
+          ),
+          ),
+            SizedBox(
+            width: 10,
+          ),
+          Container(
+            width: 300,
+            height: 300,
+            child: Image(
+            image: AssetImage("images/images_576.jpg"),
+          ),
+          ),
           ],
         ),
     );
