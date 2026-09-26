@@ -25,35 +25,57 @@ class Dawg extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          Center (
-          child: Container(
-            width: 200,
+          Center(
+            child:
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+            children:[
+             Container(
+            width: 250,
             height: 200,
-            child: Image(
-            image: AssetImage("images/images_(2).jpg"),
-          ),
-          ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            width: 200,
+            child: Image(image:AssetImage(
+              "images/images.jpg"
+            ),
+            ),
+            ),
+            Container(
+            width: 250,
             height: 200,
-            child: Image(
-            image: AssetImage("images/images_(1).jpg"),
-          ),
+            child: Image(image:AssetImage(
+              "images/images_(1).jpg"
+            ),
+            ),
+            ),
+              ],
+            ),
           ),
             SizedBox(
-            height: 10,
-          ),
-          Container(
-            width: 200,
+              height: 20,
+            ),
+            Center(
+              child: 
+             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+             Container(
+            width: 250,
             height: 200,
-            child: Image(
-            image: AssetImage("images/images.jpg"),
-          ),
-          ),
+            child: Image(image:AssetImage(
+              "images/images_576.jpg"
+            ),
+            ),
+            ),
+            Container(
+            width: 250,
+            height: 200,
+            child: Image(image:AssetImage(
+              "images/images_(2).jpg"
+            ),
+            ),
+            ),
+              ],
+            ),
+            ),
           ],
         ),
     );
